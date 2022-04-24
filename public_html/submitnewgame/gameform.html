@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../sharedcss.css">
+    <link rel="stylesheet" href="gameform.css">
+    <title>Submit New Game</title>
+    <script src="./gameform.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"><h2 id="ServerName">Submit a New Game</h2></div>
+            <div class="col"><h3 id="IPAddress">SERVER IP: 10.233.189.129</h3></div>
+        </div>
+    </div>
+
+    <nav>
+        <ul id="navigationList">
+            <li class="floatLeft"><button type="button" class="btn"><a href="../home/home.html">Home</a></button></li>
+            <li class="floatLeft"><button type="button" class="btn"><a href="../games/games.html">Games</a></button></li>
+            <li class="floatLeft"><button type="button" class="btn"><a href="#Leaderboards">Leaderboards</a></button></li>
+            <li class="floatLeft"><button type="button" class="btn"><a href="#Forums">Forums</a></button></li>
+            <li class="floatLeft"><button type="button" class="btn"><a href="#Donate">Donate</a></button></li>
+            <li class="floatLeft"><button type="button" class="btn"><a href="#Contact">Contact</a></button></li>
+            <li class="floatLeft"><button type="button" class="btn"><a href="gameform.html">Submit New Game</a></button></li>
+            <li class="floatRight"><button type="button" class="btn About"><a href="#Register">Register</a></button></li>
+            <li class="floatRight"><button type="button" class="btn About"><a href="#Sign in">Sign in</a></button></li>
+        </ul>
+    </nav>
+
+    <form class="forms" method="post" action="/submitnewgame">
+        <div class="row mb-2">
+            <div class="col-xs-12">
+                <label for="game" class="col-form-label">Game Name:</label>
+                <input type="text" id="gameName" name="gameName" class="form-control">
+            </div>
+        </div>
+    
+        <div class="row mb-2">
+            <div class="col-xs-12">
+                <label for="minNumberOfPlayers" class="col-form-label">Min Number of Players:</label>
+                <input type="text" id="minPlayers" name="minPlayers" class="form-control">
+            </div>
+        </div>
+        
+        <div class="row mb-2">
+            <div class="col-xs-12">
+                <label for="maxNumberOfPlayers" class="col-form-label">Max Number of Players:</label>
+                <input type="text" id="maxPlayers" name="maxPlayers" class="form-control">
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-xs-12">
+                <label for="gameType" class="col-form-label">Game Type:</label>
+                <select id="gameType" name="gameType" class="form-control">
+                    <option>Combat</option>
+                    <option>Crafting</option>
+                    <option>Mining</option>
+                    <option>Building</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+
+        
+        <div class="row mb-2">
+            <div class="col-xs-12">
+                <input type="button" class="form-control" id="submitButton" value="Submit" onclick="showConfirmSubmissionButton()">
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-xd-12">
+                <input type="submit" class="form-control" id="confirmSubmitButton" onclick="" value="Click to Confirm Submission">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+  body {
+    background-color: rgba(197, 197, 197, 0.644);
+    /*background-color: #00FF80; green */
+    /*background-color: rgb(63, 153, 153); dark aqua */
+  }
+
+  #ServerName {
+    color: aqua;
+    text-align: center;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    bottom: 30px;
+  }
+  
+  #IPAddress {
+    position: relative;
+    top: 260px;
+    font-size: x-large;
+    color: aqua;
+    padding-right: 5px;
+    text-align: right;
+    bottom: 30px;
+  }
+
+  .container-fluid {
+    background-image: url("images/MinecraftBackground.jpg");
+    height: 300px;
+    color:rgb(255, 255, 255);
+    background-position: center;
+  }
+  
+  #navigationList {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(39, 38, 38);
+  }
+
+  #navigationList li a {
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  #navigationList li a:hover:not(.active) {
+    color:aqua;
+    background-color: #111;
+  }
+
+  .floatRight {
+    float: right;
+  }
+  
+  .floatLeft {
+    float: left;
+  }
+  
+
+  

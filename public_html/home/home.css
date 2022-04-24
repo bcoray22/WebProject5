@@ -1,0 +1,38 @@
+#newsBox {
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(63, 153, 153);
+  height: 2px;
+  width: 10px;
+  border: 5px groove green;
+  padding: 30px;
+  padding-top: 8px;
+  padding-right: 70px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.newsArticle {
+  border: solid thick darkcyan;
+  width: 1000px;
+  margin-left: 25%;
+  align-items: center;
+}
+
+.container h3 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.container p {
+  font-size: x-large;
+  font-weight: bold;
+  text-indent: 60px;
+}
+
+.container img {
+  margin: auto;
+  display: block;
+  height: 400px;
+  width: 600px;
+}

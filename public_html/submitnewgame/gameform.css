@@ -1,0 +1,21 @@
+  form {
+      display: block;
+      color: rgb(34, 134, 134);
+      font-weight: bold;
+      float: left;
+      margin-left: 20px;
+  }
+
+  #submitButton:hover:not(.active) {
+    color:aqua;
+    background-color: #111;
+  }
+
+  #confirmSubmitButton {
+      display: none;
+  }
+
+  #confirmSubmitButton:hover:not(.active) {
+    color:aqua;
+    background-color: #111;
+  }
